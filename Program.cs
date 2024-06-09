@@ -67,7 +67,7 @@ namespace Receipt
             double total = 0;
             foreach (var item in Items)
             {
-                Console.WriteLine($" {item.Name} .............................. х {item.Quantity} шт\n\n" +
+                Console.WriteLine($" {item.Name} ............................. х {item.Quantity} шт\n\n" +
                     $"      1 х {item.Quantity}  {item.UnitPrice.ToString("F2")} грн............ {item.GetTotalPrice().ToString("F2")} грн.\n\n" +
                     $"      Скидка .................... - {item.Discount.ToString("F2")} грн.\n");
                 total += item.GetTotalPrice();
